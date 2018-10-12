@@ -1,0 +1,62 @@
+python-rtslib-fb (2.1.57+debian-3) unstable; urgency=medium
+
+  * override_dh_python3 to fix Py3 shebang.
+
+ -- Thomas Goirand <zigo@debian.org>  Fri, 23 Oct 2015 23:51:49 +0000
+
+python-rtslib-fb (2.1.57+debian-2) unstable; urgency=medium
+
+  * Uploading to unstable.
+
+ -- Thomas Goirand <zigo@debian.org>  Fri, 16 Oct 2015 10:48:18 +0000
+
+python-rtslib-fb (2.1.57+debian-1) experimental; urgency=medium
+
+  * New upstream release (fake one to fix native package).
+  * Check if configfs is mounted before starting targetctl restore.
+  * Package isn't native anymore (missing debian/source/format file).
+  * Removed X-Python-Version: 2.7 now useless (Jessie has 2.7 by default).
+  * Standards-Version is now 3.9.6.
+  * Added missing dh-python build-depends.
+  * Added missing python{3,}-six (build-)depends.
+
+ -- Thomas Goirand <zigo@debian.org>  Fri, 02 Oct 2015 12:50:32 +0000
+
+python-rtslib-fb (2.1.57-1) experimental; urgency=medium
+
+  * New upstream release.
+
+ -- Thomas Goirand <zigo@debian.org>  Mon, 07 Sep 2015 10:24:27 +0000
+
+python-rtslib-fb (2.1.45-5) UNRELEASED; urgency=medium
+
+  * Checking if configfs is present in /proc/mount before starting targetctl
+    restore.
+
+ -- Thomas Goirand <zigo@debian.org>  Thu, 23 Apr 2015 11:36:46 +0200
+
+python-rtslib-fb (2.1.45-4) unstable; urgency=medium
+
+  * Fixed VCS URLs.
+
+ -- Thomas Goirand <zigo@debian.org>  Tue, 05 Aug 2014 07:47:04 +0000
+
+python-rtslib-fb (2.1.45-3) unstable; urgency=medium
+
+  * Fixed missing python3-all build-depends. (Closes: #746133).
+
+ -- Thomas Goirand <zigo@debian.org>  Wed, 30 Apr 2014 08:50:32 +0000
+
+python-rtslib-fb (2.1.45-2) unstable; urgency=medium
+
+  * Manually tries to load configfs kernel module to avoid failure on install.
+    Thanks to Martin Zobel-Helas <zobel@debian.org> for reporting this problem.
+    (Closes: #745648).
+
+ -- Thomas Goirand <zigo@debian.org>  Wed, 30 Apr 2014 07:38:32 +0000
+
+python-rtslib-fb (2.1.45-1) unstable; urgency=medium
+
+  * Initial release. (Closes: #736573)
+
+ -- Thomas Goirand <zigo@debian.org>  Sat, 25 Jan 2014 15:34:09 +0800
